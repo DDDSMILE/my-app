@@ -1,17 +1,90 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import Sider from './components/App';
+// import './index.css';
+// import App from './components/App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Sider />
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// import React from 'react';
+// import ReactDOM from 'react-dom';
+// import 'antd/dist/antd.min.css';
+// // import './index.css';
+// import { Menu } from 'antd';
+
+// const { SubMenu } = Menu;
+
+// class App extends React.Component {
+//   handleClick = e => {
+//     console.log('click ', e);
+//   };
+
+//   render() {
+//     return (
+
+//       <Menu
+//         onClick={this.handleClick}
+//         style={{ width: 256 }}
+//         defaultSelectedKeys={['1']}
+//         defaultOpenKeys={['sub1']}
+//         mode="inline"
+//       >
+//         <h1>xinchao cac ban</h1>
+//         <SubMenu
+//           key="sub1"
+//           title={
+//             <span>
+//               {/* <Icon type="mail" /> */}
+//               <span>Navigation One</span>
+//             </span>
+//           }
+//         >
+//           <Menu.ItemGroup key="g1" title="Item 1">
+//             <Menu.Item key="1">Option 1</Menu.Item>
+//             <Menu.Item key="2">Option 2</Menu.Item>
+//           </Menu.ItemGroup>
+//           <Menu.ItemGroup key="g2" title="Item 2">
+//             <Menu.Item key="3">Option 3</Menu.Item>
+//             <Menu.Item key="4">Option 4</Menu.Item>
+//           </Menu.ItemGroup>
+//         </SubMenu>
+//         <SubMenu  key="sub2" title={
+//             <span>
+//               {/* <Icon type="appstore" /> */}
+//               <span>Navigation Two</span>
+//             </span>
+//         }>
+//           <Menu.Item key="5">Option 5</Menu.Item>
+//           <Menu.Item key="6">Option 6</Menu.Item>
+//           <SubMenu key="sub3" title="Submenu">
+//             <Menu.Item key="7">Option 7</Menu.Item>
+//             <Menu.Item key="8">Option 8</Menu.Item>
+//           </SubMenu>
+//         </SubMenu>
+//         <SubMenu
+//           key="sub4"
+//           title={
+//             <span>
+//               {/* <Icon type="setting" /> */}
+//               <span>Navigation Three</span>
+//             </span>
+//           }
+//         >
+//           <Menu.Item key="9">Option 9</Menu.Item>
+//           <Menu.Item key="10">Option 10</Menu.Item>
+//           <Menu.Item key="11">Option 11</Menu.Item>
+//           <Menu.Item key="12">Option 12</Menu.Item>
+//         </SubMenu>
+//       </Menu>
+//     );
+//   }
+// }
+
+// ReactDOM.render(<App />, document.getElementById('root'));
+
+// export default App;
